@@ -1,49 +1,26 @@
-/* style.css */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+/* Navigation menu style with Flexbox */
+nav {
+  background-color: #333; /* Background color */
+  padding: 10px; /* Padding around the menu */
 }
 
-header {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
+.main-menu {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Flexbox for horizontal alignment */
+  justify-content: space-around; /* Evenly spaced items */
+  margin: 0; /* Reset default margins */
+  padding: 0; /* Reset default padding */
 }
 
-h1 {
-  font-size: 2rem;
+.main-menu li {
+  padding: 10px; /* Padding for each menu item */
 }
 
-main {
-  padding: 20px;
+.main-menu a {
+  color: white; /* White text color */
+  text-decoration: none; /* No underline */
 }
 
-section {
-  margin-bottom: 30px;
-}
-
-ul {
-  list-style: disc;
-  padding-left: 20px;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-/* Media query for responsive design */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  main {
-    padding: 10px;
-  }
+.main-menu a:hover {
+  color: #ccc; /* Change color on hover */
 }
