@@ -1,53 +1,108 @@
-<!-- index.html -->
-<!-- Correctly linking to the CSS file -->
-<link rel="stylesheet" href="style.css">
-
-<!-- index.html -->
+<!-- Header Section -->
 <header>
+  <h1>Welcome to My Portfolio</h1>
   <nav>
-    <ul class="main-menu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <div class="hero-content">
-    <h1>John Doe's Portfolio</h1>
-    <p>Web Developer, Quality Assurance, Graphics Design, Video Editing, and Social Media Management</p>
-  </div>
-  <!-- Add the image to the top-right corner -->
-  <img src="your-image.jpg" alt="Your Image Description" class="hero-image" />
 </header>
 
+<!-- Introduction Section -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I'm a designer who specializes in creating unique and innovative solutions. I love turning ideas into reality and exploring new design concepts. Here's a selection of my latest work.</p>
+</section>
 
-<main>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Web developer with one year of experience in various fields including Quality Assurance, Graphics Design, Video Editing, and Social Media Management.</p>
-  </section>
+<!-- Portfolio Section -->
+<section id="portfolio">
+  <h2>Latest Designs</h2>
+  <div class="portfolio-grid">
+    <!-- Portfolio Item 1 -->
+    <div class="portfolio-item">
+      <img src="portfolio1.jpg" alt="Design 1">
+      <h3>Design 1</h3>
+      <p>Description of Design 1.</p>
+    </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>Project 1: Web development project with HTML/CSS/JS</li>
-      <li>Project 2: Quality Assurance project using test automation</li>
-      <li>Project 3: Graphics design portfolio</li>
-      <li>Project 4: Video editing work samples</li>
-      <li>Project 5: Social Media Marketing and Management campaigns</li>
-    </ul>
-  </section>
+    <!-- Portfolio Item 2 -->
+    <div class="portfolio-item">
+      <img src="portfolio2.jpg" alt="Design 2">
+      <h3>Design 2</h3>
+      <p>Description of Design 2.</p>
+    </div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: johndoe@example.com</p>
-    <p>LinkedIn: linkedin.com/in/johndoe</p>
-  </section>
-</main>
+    <!-- Portfolio Item 3 -->
+    <div class="portfolio-item">
+      <img src="portfolio3.jpg" alt="Design 3">
+      <h3>Design 3</h3>
+      <p>Description of Design 3.</p>
+    </div>
+  </div>
+</section>
 
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>If you'd like to discuss a project or just say hi, you can reach me at: <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+</section>
+
+<!-- Footer Section -->
 <footer>
-  <p>&copy; 2024 John Doe. All rights reserved.</p>
+  <p>&copy; 2024 My Portfolio. All rights reserved.</p>
 </footer>
-<!-- Correctly linking to the JavaScript file -->
-<script src="script.js"></script>
 
+<!-- Basic Styling -->
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .portfolio-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-item {
+    width: 30%;
+    text-align: center;
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+</style>
