@@ -1,108 +1,125 @@
-<!-- Header Section -->
-<header>
-  <h1>Welcome to My Portfolio</h1>
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+<!-- HTML -->
+<div id="portfolio">
 
-<!-- Introduction Section -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>Hello! I'm a designer who specializes in creating unique and innovative solutions. I love turning ideas into reality and exploring new design concepts. Here's a selection of my latest work.</p>
-</section>
+    <!-- Header Section -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #f7f7f7; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <div class="logo">
+            <!-- Replace with your logo -->
+            <img src="logo.png" alt="Logo" style="height: 40px;">
+        </div>
+        <nav>
+            <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Portfolio Section -->
-<section id="portfolio">
-  <h2>Latest Designs</h2>
-  <div class="portfolio-grid">
-    <!-- Portfolio Item 1 -->
-    <div class="portfolio-item">
-      <img src="portfolio1.jpg" alt="Design 1">
-      <h3>Design 1</h3>
-      <p>Description of Design 1.</p>
-    </div>
+    <!-- Hero Section -->
+    <section id="hero" style="display: flex; padding: 60px; align-items: center;">
+        <div style="flex: 1;">
+            <h1>Hi, I am Alfred, I am a</h1>
+            <h2>Graphic Designer, Social Media Manager</h2>
+        </div>
+        <div style="flex: 1; text-align: center;">
+            <!-- Replace with your portrait -->
+            <img src="portrait.jpg" alt="Alfred" style="width: 200px; border-radius: 50%;">
+        </div>
+    </section>
 
-    <!-- Portfolio Item 2 -->
-    <div class="portfolio-item">
-      <img src="portfolio2.jpg" alt="Design 2">
-      <h3>Design 2</h3>
-      <p>Description of Design 2.</p>
-    </div>
+    <!-- Services Section -->
+    <section id="services" style="padding: 40px; background-color: #f2f2f2;">
+        <h2>My Services</h2>
+        <div style="display: flex; justify-content: space-around;">
+            <!-- Service 1 -->
+            <div style="text-align: center;">
+                <h3>Graphic Design</h3>
+                <p>Logo design, branding, print design, etc.</p>
+            </div>
+            <!-- Service 2 -->
+            <div style="text-align: center;">
+                <h3>Social Media Management</h3>
+                <p>Content creation, social media strategy, etc.</p>
+            </div>
+            <!-- Service 3 -->
+            <div style="text-align: center;">
+                <h3>Web Design</h3>
+                <p>Responsive design, website development, etc.</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Portfolio Item 3 -->
-    <div class="portfolio-item">
-      <img src="portfolio3.jpg" alt="Design 3">
-      <h3>Design 3</h3>
-      <p>Description of Design 3.</p>
-    </div>
-  </div>
-</section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" style="padding: 40px;">
+        <h2>Testimonials</h2>
+        <div style="display: flex; justify-content: space-around;">
+            <!-- Testimonial 1 -->
+            <div style="text-align: center;">
+                <p>"Alfred's designs are outstanding!" - Client A</p>
+            </div>
+            <!-- Testimonial 2 -->
+            <div style="text-align: center;">
+                <p>"Great work on our social media campaign!" - Client B</p>
+            </div>
+            <!-- Testimonial 3 -->
+            <div style="text-align: center;">
+                <p>"Our website looks amazing, thanks to Alfred." - Client C</p>
+            </div>
+        </div>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>If you'd like to discuss a project or just say hi, you can reach me at: <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
-</section>
+    <!-- Footer Section -->
+    <footer style="padding: 20px; background-color: #333; color: white; text-align: center;">
+        <p>&copy; 2024 Alfred. All Rights Reserved.</p>
+        <p>
+            Follow me: 
+            <a href="https://facebook.com" style="color: white; text-decoration: none;">Facebook</a> |
+            <a href="https://twitter.com" style="color: white; text-decoration: none;">Twitter</a> |
+            <a href="https://linkedin.com" style="color: white; text-decoration: none;">LinkedIn</a>
+        </p>
+    </footer>
+</div>
 
-<!-- Footer Section -->
-<footer>
-  <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-</footer>
-
-<!-- Basic Styling -->
+<!-- CSS -->
 <style>
-  body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
+}
 
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-  }
+#hero h1 {
+    margin: 0;
+    font-size: 36px;
+}
 
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
+#hero h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #555;
+}
 
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-
-  nav a {
-    color: #fff;
+a {
+    color: #1a1a1a;
     text-decoration: none;
-  }
+}
 
-  .portfolio-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .portfolio-item {
-    width: 30%;
-    text-align: center;
-  }
-
-  .portfolio-item img {
-    width: 100%;
-    height: auto;
-  }
-
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
+a:hover {
+    text-decoration: underline;
+}
 </style>
+
+<!-- JavaScript -->
+<script>
+// Example: Smooth Scrolling for Navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+</script>
